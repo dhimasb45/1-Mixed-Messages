@@ -37,4 +37,12 @@ const penutup = [
   "menginspirasi banyak orang.",
 ];
 
-console.log(awalan[0] + " " + kataKerja[0] + " " + penutup[0]);
+const mixed_messages = (arr1, arr2, arr3) => {
+  indeks_arr1 = Math.floor(Math.random() * arr1.length);
+  indeks_arr2 = Math.floor(Math.random() * arr2.length);
+  indeks_arr3 = Math.floor(Math.random() * arr3.length);
+
+  return awalan[indeks_arr1] + " " + kataKerja[indeks_arr2] + " " + penutup[indeks_arr3];
+};
+
+console.log(mixed_messages(awalan, kataKerja, penutup));
